@@ -32,7 +32,7 @@
           <td>
             <button v-if="mod_new" @click="newStatue" :disabled="saving">Létrehoz</button>
             <button v-if="!mod_new" @click="saveStatue" :disabled="saving">Mentés</button>
-            <button v-if="!mod_new" @click="editStatueCancel">Mégse</button>
+            <button v-if="!mod_new" @click="editStatueCancel" :disabled="saving">Mégse</button>
           </td>
         </tr>
       </tbody>
@@ -89,6 +89,7 @@ export default {
      })
      await this.loadData()
      this.saving=false
+     this.resetForm()
     },
 
 
