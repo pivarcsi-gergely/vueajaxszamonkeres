@@ -14,8 +14,8 @@
           <td>{{ statue.height }}</td>
           <td>{{ statue.price }}</td>
           <td>
-            <button @click="deleteStatue(statue.id)">Törlés</button>
-            <button @click="editStatue(statue.id)">Szerkesztés</button>
+            <button>Törlés</button>
+            <button>Szerkesztés</button>
           </td>
         </tr>
 
@@ -60,6 +60,33 @@ export default {
      let Response = await fetch('http://127.0.0.1:8000/api/statues')
      let data = await Response.json()
      this.statueList = data
+    },
+
+    async newStatue() {
+      this.saving='disabled'
+     await fetch('http://127.0.0.1:8000/api/statues', {
+       method: 'POST',
+       headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       },
+       body: JSON.stringify(this.statue) 
+     })
+     await this.loadData()
+     this.saving=false
+    },
+    async saveStatue() {
+      this.saving='disabled'
+     await fetch(`http://127.0.0.1:8000/api/statues/${this.statue.id}`, {
+       method: 'PATCH',
+       headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       },
+       body: JSON.stringify(this.statue) 
+     })
+     await this.loadData()
+     this.saving=false
     },
   },
   mounted() {
