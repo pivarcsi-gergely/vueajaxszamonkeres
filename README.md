@@ -1,4 +1,4 @@
-# [Név]
+# Pivarcsi Gergely Máté
 
 ## Hogyan kezdj neki?
 
@@ -8,13 +8,17 @@
 4. Clone-ozd a saját(!) repodat a VSCode-ba
 5. Írd át a Readme.md elején a [Név] részt a saját nevedre, majd commitolj és pusholj.
 6. Telepítsd a függőségeket
+
 ```
   npm install
 ```
+
 7. Indítsd el a fejlesztői szervert
+
 ```
   npm run serve
 ```
+
 8. Indíts egy új VSCode vagy terminal ablakot.
 9. Clone-ozd egy másik könyvtárba a backendet: https://github.com/hgabor/MuzeumBackend
 10. Az ott leírtaknak megfelelően indítsd el, hogy elérhető legyen a kliens kódod számára.
@@ -46,21 +50,23 @@ Készíts alkalmazást, ami a MuzeumBackend szobraineak (statues) adminisztráci
 7. Figyelj oda, hogy értelmes commit üzenetek legyenek. Értelmesnek tekintjük a commit üzenetet, ha a "Miért?" kérdésre válaszol. (1p)
 
 8. Amint látod a listázást, új létrehozást, módosítást jól elkülöníthető HTML és JavaScript kódokkal rendelkeznek. Készíts három komponenst. (+5p)
-    1. Táblázat a rekordok listájával. Innen elérhető a szerkesztés, törlés és az új létrehozás.
-    2. Űrlap, amivel új entitást lehet létrehozni
-    3. Űrlap, amivel meglévő entitást lehet szerkeszteni.
+
+   1. Táblázat a rekordok listájával. Innen elérhető a szerkesztés, törlés és az új létrehozás.
+   2. Űrlap, amivel új entitást lehet létrehozni
+   3. Űrlap, amivel meglévő entitást lehet szerkeszteni.
 
 9. Készíts alkalmazást, amivel a két entitás(Paintings, Statues) listázó komponense megjeleníthető. Használd a VueRouter-t ehhez. (+5p)
 
 Figyellj oda, hogy először a sima pontos feladatoknak láss neki, a plusz pontok (pl. +1p) hagyd a végére.
 
 Sima pontok értékelése:
-*  0p -  9p: 1
-* 10p - 12p: 2
-* 13p - 14p: 3
-* 15p - 16p: 4
-* 17p - 20p: 5
+
+- 0p - 9p: 1
+- 10p - 12p: 2
+- 13p - 14p: 3
+- 15p - 16p: 4
+- 17p - 20p: 5
 
 Plusz pontok értékelése:
 
-* (+5p - +10p): 5
+\* (+5p - +10p): 5
